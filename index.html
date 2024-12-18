@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <section id="items">
+
+      <h1>Desserts</h1>
+
+      <div class="items-grid">
+        <div class="item">
+          <div class="img-wrapper">
+            <img src="./assets/images/image-waffle-desktop.jpg" id="item-img">
+          </div>
+          <div class="add-to-cart" data-item-name="Waffle with Berries" data-item-price="6.50" data-item-image="./assets/images/image-waffle-desktop.jpg"><img src="./assets/images/icon-add-to-cart.svg"><span>Add to Cart</span></div>
+      
+          <div class="item-details">
+            Waffle
+            <div class="item-title">Waffle with Berries</div>
+            <div class="item-price">$6.50</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="img-wrapper">
+            <img src="./assets/images/image-creme-brulee-desktop.jpg" id="item-img">
+          </div>
+          <div class="add-to-cart" data-item-name="Vanilla Bean Crème Brûlée" data-item-price="7.00" data-item-image="./assets/images/image-creme-brulee-desktop.jpg"><img src="./assets/images/icon-add-to-cart.svg"><span>Add to Cart</span></div>
+          <div class="item-details">
+            Crème Brûlée
+            <div class="item-title">Vanilla Bean Crème Brûlée</div>
+            <div class="item-price">$7.00</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="img-wrapper">
+            <img src="./assets/images/image-macaron-desktop.jpg" id="item-img">
+          </div>
+          <div class="add-to-cart" data-item-name="Macaron Mix of Five" data-item-price="8.00" data-item-image="./assets/images/image-macaron-desktop.jpg"><img src="./assets/images/icon-add-to-cart.svg"><span>Add to Cart</span></div>
+          
+          <div class="item-details">
+            Macaron
+            <div class="item-title">Macaron Mix of Five</div>
+            <div class="item-price">$8.00</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="img-wrapper">
+            <img src="./assets/images/image-tiramisu-desktop.jpg" id="item-img">
+          </div>
+          <div class="add-to-cart" data-item-name="Classic Tiramisu" data-item-price="5.50" data-item-image="./assets/images/image-tiramisu-desktop.jpg"><img src="./assets/images/icon-add-to-cart.svg"><span>Add to Cart</span></div>
+          <div class="item-details">
+            Tiramisu
+            <div class="item-title">Classic Tiramisu</div>
+            <div class="item-price">$5.50</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="img-wrapper">
+            <img src="./assets/images/image-baklava-desktop.jpg" id="item-img">
+          </div>
+          <div class="add-to-cart" data-item-name="Pistachio Baklava" data-item-price="4.00" data-item-image="./assets/images/image-baklava-desktop.jpg"><img src="./assets/images/icon-add-to-cart.svg"><span>Add to Cart</span></div>
+          <div class="item-details">
+            Baklava
+            <div class="item-title">Pistachio Baklava</div>
+            <div class="item-price">$4.00</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="img-wrapper">
+            <img src="./assets/images/image-meringue-desktop.jpg" id="item-img">
+          </div>
+          <div class="add-to-cart" data-item-name="Lemon Meringue Pie" data-item-price="5.00" data-item-image="./assets/images/image-meringue-desktop.jpg"><img src="./assets/images/icon-add-to-cart.svg"><span>Add to Cart</span></div>
+          <div class="item-details">
+            Pie
+            <div class="item-title">Lemon Meringue Pie</div>
+            <div class="item-price">$5.00</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="img-wrapper">
+            <img src="./assets/images/image-cake-desktop.jpg" id="item-img">
+          </div>
+          <div class="add-to-cart" data-item-name="Red Velvet Cake" data-item-price="4.50" data-item-image="./assets/images/image-cake-desktop.jpg"><img src="./assets/images/icon-add-to-cart.svg"><span>Add to Cart</span></div>
+          <div class="item-details">
+            Cake
+            <div class="item-title">Red Velvet Cake</div>
+            <div class="item-price">$4.50</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="img-wrapper">
+            <img src="./assets/images/image-brownie-desktop.jpg" id="item-img">
+          </div>
+          <div class="add-to-cart" data-item-name="Salted Caramel Brownie" data-item-price="5.50" data-item-image="./assets/images/image-brownie-desktop.jpg"><img src="./assets/images/icon-add-to-cart.svg"><span>Add to Cart</span></div>
+          <div class="item-details">
+            Brownie
+            <div class="item-title">Salted Caramel Brownie</div>
+            <div class="item-price">$5.50</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="img-wrapper">
+            <img src="./assets/images/image-panna-cotta-desktop.jpg" id="item-img">
+          </div>
+          <div class="add-to-cart" data-item-name="Vanilla Panna Cotta" data-item-price="6.50" data-item-image="./assets/images/image-panna-cotta-desktop.jpg"><img src="./assets/images/icon-add-to-cart.svg"><span>Add to Cart</span></div>
+          <div class="item-details">
+            Panna Cotta
+            <div class="item-title">Vanilla Panna Cotta</div>
+            <div class="item-price">$6.50</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="cart">
+      <div class="cart-container">
+        <h3>Your Cart (<!-- Quantity -->)</h3>
+        <div class="empty-cart">
+          <img src="./assets/images/illustration-empty-cart.svg">
+          <p>Your added items will appear here</p>
+        </div>
+        <div id="cart-items">
+          <!-- Items will be dynamically added here -->
+           
+        </div>
+        <div class="cart-total" style="display: none;">
+          <h4>Order Total </h4>
+          <p id="total-amount">$0.00</p>          
+        </div>
+        <div id="order">
+          <div class="carbon-neutral">
+            <img src="./assets/images/icon-carbon-neutral.svg"><span>This is a <b>carbon-neutral</b> delivery</span>
+          </div>
+          <div class="confirm-order" id="confirm-order">Confirm Order</div>
+        </div>
+        
+      </div>
+      
+    </section>
+
+    <div id="overlay" class="overlay"></div>
+    <section id="order-confirmation" class="order-confirmation">
+      <img src="./assets/images/icon-order-confirmed.svg">
+      <h1>Order Confirmed!</h1>
+      <p>We hope you enjoy your food!</p>
+      <div class="confirmed-orders" id="confirmed-orders">
+
+      </div>
+      <button id="closePopup" class="closePopup">Start New Order</button>
+    </section>
+
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Ankit</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
